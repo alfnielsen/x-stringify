@@ -1,0 +1,32 @@
+{
+  "name": "x-stringify",
+  "version": "0.0.1",
+  "description": "Yet another replacement for Json.stringify (with maxDeth, circular ref prevention and other settings)",
+  "source": "src/stringify.ts",
+  "main": "stringify.js",
+  "types": "stringify.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfnielsen/x-stringify.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfnielsen/x-stringify/issues"
+  },
+  "homepage": "https://github.com/alfnielsen/x-stringify#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-typescript": "^7.21.5",
+    "@types/jest": "^29.5.2",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3"
+  }
+}
