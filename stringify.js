@@ -7,7 +7,10 @@ function stringify(obj, options) {
         showUndefined: false,
         showNull: true,
         leadingComma: false,
-    }, options);
+    }, {
+        ...options,
+        indent: options?.indent !== undefined ? " ".repeat(options.indent) : "  ",
+    });
     const seen = new WeakSet();
     let msg = "";
     let depth = 0;
@@ -68,6 +71,7 @@ function stringify(obj, options) {
             else {
                 if (opt.maxDepth && depth > opt.maxDepth) {
                     msg += `${prefix}[max depth]`;
+                    depth--;
                     return true;
                 }
                 msg += `${prefix}{\n`;
