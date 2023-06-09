@@ -22,6 +22,16 @@ const str = stringify(obj, { maxDepth: 2 });
 console.log(str); // {"a":1,"b":2,"c":{"a":1,"b":2,"c":"[Circular]"}} 
 ```
 
+In node.js you may need to use `require` instead of `import`:
+
+```js
+const { stringify } = require("x-stringify")
+// Or older versions of node:
+const stringify = require('x-stringify').stringify;
+
+```
+
+
 ## Options
 
 ```ts
@@ -33,3 +43,5 @@ console.log(str); // {"a":1,"b":2,"c":{"a":1,"b":2,"c":"[Circular]"}}
         leadingComma?: boolean; // default: false (JSON object must normally not include leading comma)
     }
 ```
+
+
