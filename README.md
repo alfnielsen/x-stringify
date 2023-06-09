@@ -41,6 +41,8 @@ const stringify = require('x-stringify').stringify;
         showUndefined?: boolean; // default: false
         showNull?: boolean; // default: true
         leadingComma?: boolean; // default: false (JSON object must normally not include leading comma)
+        removeKeys?: string[]; // default: undefined (remove these any matching keys from the object)
+
     }
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "x-stringify",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Yet another replacement for Json.stringify (with maxDeth, circular ref prevention and other settings)",
   "type": "module",
   "source": "src/stringify.ts",

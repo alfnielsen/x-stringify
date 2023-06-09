@@ -4,4 +4,5 @@ export declare function stringify(obj: any, options?: {
     showUndefined?: boolean;
     showNull?: boolean;
     leadingComma?: boolean;
+    removeKeys?: string[];
 }): string;

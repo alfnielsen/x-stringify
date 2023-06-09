@@ -6,6 +6,7 @@ export function stringify(
     showUndefined?: boolean
     showNull?: boolean
     leadingComma?: boolean
+    removeKeys?: string[]
   }
 ) {
   const opt = Object.assign(
@@ -25,6 +26,7 @@ export function stringify(
   let msg: string = ""
   let depth = 0
   let runner = (key: string, value: any) => {
+    if (opt.removeKeys && opt.removeKeys.includes(key)) return false
     let keyLabel = key === "" ? "" : `${key}: `
     let indent = `${opt.indent.repeat(depth)}`
     let prefix = `${indent}${keyLabel}`
