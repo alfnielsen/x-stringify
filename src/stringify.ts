@@ -46,6 +46,10 @@ export function stringify(
       msg += `${prefix}"[Date: ${value.toISOString()}]"`
       return true
     }
+    if (typeof value === "symbol") {
+      msg += `${prefix}"[Symbol: ${value.toString()}]"`
+      return true
+    }
     if (typeof value === "number") {
       msg += `${prefix}${value}`
       return true
