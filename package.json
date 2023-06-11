@@ -28,7 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/alfnielsen/x-stringify.git"
   },
-  "author": "",
+  "author": "Alf Nielsen <alfnielsen@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alfnielsen/x-stringify/issues"
