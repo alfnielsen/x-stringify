@@ -1,6 +1,6 @@
 {
   "name": "x-stringify",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Yet another replacement for Json.stringify (with maxDeth, circular ref prevention and other settings)",
   "type": "module",
   "source": "src/stringify.ts",
@@ -9,8 +9,14 @@
   "module": "build/stringify.es.js",
   "unpkg": "build/stringify.umd.js",
   "exports": {
-    "require": "./build/stringify.cjs",
-    "default": "./build/stringify.es.js"
+    "require": {
+      "default": "./build/stringify.cjs",
+      "types": "./build/stringify.d.ts"
+    },
+    "import": {
+      "default": "./build/stringify.es.js",
+      "types": "./build/stringify.d.ts"
+    }
   },
   "files": [
     "build"
